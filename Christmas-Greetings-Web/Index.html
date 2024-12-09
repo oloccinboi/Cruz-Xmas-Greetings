@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Greetings from The Cruz Family</title>
+    <style>
+        .mail-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+
+
+        @media (min-width: 768px) {
+            .mail-center img {
+                width:450px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="mail-center">
+        <img src="./Assets/A.png" id="image" onclick="changeImage()" alt="Christmas Image">
+    </div>
+
+
+
+    <script>
+        // JavaScript function to change the image and redirect
+        let imageClickedOnce = false; // To track if the image has been clicked once
+
+        function changeImage() {
+            var image = document.getElementById('image');
+            
+            // If the image has been clicked once, go to a different page
+            if (imageClickedOnce) {
+                window.location.href = './Invi-clickMe.html'; // Change this to your desired URL
+            } else {
+                // If it's the first click, change the image
+                if (image.src.includes('A.png')) {
+                    image.src = './Assets/B.png'; // New image
+                } else {
+                    image.src = './Assets/A.png'; // Original image
+                }
+                imageClickedOnce = true; // Mark the image as clicked once
+            }
+        }
+    </script>
+</body>
+</html>

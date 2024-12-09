@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Greetings from The Cruz Family</title>
+    
+    <style>
+       .mail-center img {
+        width: 100%;  /* Full viewport width */
+        object-fit: cover; /* Ensures the image covers the viewport without distortion */
+    }
+
+
+     /* When the device is in landscape orientation */
+     @media (orientation: landscape) {
+            .mail-center img {
+                content: url('../Assets/Landscape/C-Landscape.png'); /* Change image for landscape mode */
+                width: 100%; /* You can adjust the width as needed for landscape */
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="mail-center">
+        <a href="./Invi-carousel.html"><img src="./Assets/C-portrait.png"></a>
+   </div>
+      
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
